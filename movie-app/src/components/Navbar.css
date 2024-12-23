@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  color: #000000;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.navbar-logo {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-item a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+  color: #28a745; /* Cambiar a verde al pasar el cursor */
+}
+
+.navbar-cart {
+  margin-left: 3rem; /* Aumentar el espacio entre Contacto y Carrito */
+}
+
+.navbar-cart a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-cart a:hover {
+  color: #28a745; /* Cambiar a verde al pasar el cursor */
+}
