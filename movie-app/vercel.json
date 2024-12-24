@@ -6,13 +6,16 @@
       "use": "@vercel/node"
     },
     {
-      "src": "/movie-app/src",
+      "src": "src/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "frontend/dist" }
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "server/server.js" },
-    { "src": "/(.*)", "dest": "frontend/dist/$1" }
-  ]
+    { "src": "/(.*)", "dest": "dist/$1" }
+  ],
+  "env": {
+    "PORT": "5000"
+  }
 }
