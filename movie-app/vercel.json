@@ -2,17 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/server.js",
+      "src": "server/server.js",
       "use": "@vercel/node"
     },
     {
-      "src": "frontend/package.json",
+      "src": "/movie-app/src",
       "use": "@vercel/static-build",
       "config": { "distDir": "frontend/dist" }
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "backend/server.js" },
+    { "src": "/api/(.*)", "dest": "server/server.js" },
     { "src": "/(.*)", "dest": "frontend/dist/$1" }
   ]
 }
